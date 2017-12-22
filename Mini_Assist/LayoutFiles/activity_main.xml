@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sherlock.shoppingassist.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMain"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Welcome to Shopping assistant app \n Inbudget "
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        android:text="Your Shopping Status : \n"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressSpent"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scanButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:progress="45" />
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/memoButton"
+        android:layout_alignBottom="@+id/memoButton"
+        android:layout_centerHorizontal="true"
+        android:text="Scan"
+        />
+
+    <Button
+        android:id="@+id/cartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/memoButton"
+        android:layout_alignBottom="@+id/memoButton"
+        android:layout_alignLeft="@+id/budgetButton"
+        android:layout_alignStart="@+id/budgetButton"
+        android:text="Cart" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/memoButton"
+        android:text="Memo"
+        android:layout_above="@+id/budgetButton"
+        android:layout_alignRight="@+id/budgetButton"
+        android:layout_alignEnd="@+id/budgetButton"
+        android:layout_marginBottom="40dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budgetButton"
+        android:text="Declare/Update Budget"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textViewMain"
+        android:layout_alignEnd="@+id/textViewMain"
+        android:layout_alignLeft="@+id/textViewMain"
+        android:layout_alignStart="@+id/textViewMain" />
+
+
+</RelativeLayout>

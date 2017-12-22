@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sherlock.shoppingassist.BudgetActivity">
+
+    <TextView
+        android:id="@+id/budgetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/budgetEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:text="Please select your Budget \n for Shopping Session"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/budgetEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Your Budget"
+        android:inputType="number"
+        android:layout_above="@+id/confirmBudgetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/confirmBudgetButton"
+       android:text="Confirm bugdet"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="141dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetBudgetButton"
+        android:text="Reset Budget"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></Button>
+
+    <Button
+        android:id="@+id/resetMemoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resetBudgetButton"
+        android:layout_alignBottom="@+id/resetBudgetButton"
+        android:layout_toEndOf="@+id/confirmBudgetButton"
+        android:layout_toRightOf="@+id/confirmBudgetButton"
+        android:text="Reset Memo"></Button>
+
+    <Button
+        android:id="@+id/resetCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resetBudgetButton"
+        android:layout_alignBottom="@+id/resetBudgetButton"
+        android:layout_toLeftOf="@+id/confirmBudgetButton"
+        android:layout_toStartOf="@+id/confirmBudgetButton"
+        android:text="Reset Cart"></Button>
+
+</RelativeLayout>
